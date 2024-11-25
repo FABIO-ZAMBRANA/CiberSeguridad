@@ -40,7 +40,6 @@
           </a>
         </li>
        <li>
-          <!-- Icono QR y enlace para mostrar la imagen QR -->
           <a href="#" id="qr-link">
             <i class="ri-qr-code-line"></i> QR
           </a>
@@ -58,7 +57,7 @@
             Protégete de las amenazas digitales. Aprende cómo identificar y combatir los ciberataques.
         </p>
         <div class="header__btn">
-          <a href="Productos.html" class="btn">COMENCEMOS</a>
+          <a href="productos.html" class="btn">COMENCEMOS</a>
         </div>        
     </header>
 
@@ -289,18 +288,18 @@ Colaboración: Trabajamos en equipo, compartiendo conocimientos y habilidades.
     <script src="all.js"></script>
     
     <script>
-      // Mostrar el QR en un modal al hacer clic en el enlace QR
+      
       const qrLink = document.getElementById('qr-link');
       const qrModal = document.getElementById('qr-modal');
       const closeQrModal = document.getElementById('close-qr-modal');
     
       qrLink.addEventListener('click', function (event) {
-        event.preventDefault();  // Evita que el enlace se siga
-        qrModal.style.display = 'flex';  // Muestra el modal
+        event.preventDefault(); 
+        qrModal.style.display = 'flex';  
       });
     
       closeQrModal.addEventListener('click', function () {
-        qrModal.style.display = 'none';  // Cierra el modal
+        qrModal.style.display = 'none'; 
       });
     </script>
   </body>
