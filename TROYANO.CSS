@@ -1,0 +1,279 @@
+/* Reset */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Tipografía y cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc; /* Fondo suave */
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #00509e;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    border-bottom: 4px solid #003e7c; /* Agrega una línea sutil */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Main content */
+main {
+    padding: 2rem 1rem;
+}
+
+/* Sección de Troyano */
+.content {
+    margin-bottom: 3rem;
+    text-align: left;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px; /* Bordes más suaves */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más difusa */
+    background: #ffffff;
+    transition: transform 0.3s ease-in-out; /* Animación suave en hover */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Efecto hover */
+}
+
+h2 {
+    font-size: 2rem;
+    color: #00509e;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.content-block {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: #0072c6;
+    margin-bottom: 0.5rem;
+}
+
+p, ul {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
+
+/* Videos */
+iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Menu Responsivo */
+.nav__menu__btn {
+    display: none;
+    cursor: pointer;
+}
+
+.nav__menu__btn span {
+    font-size: 2rem;
+    color: #00509e;
+}
+
+.nav__links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav__links.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #f1f1f1;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .nav__menu__btn {
+        display: block;
+    }
+
+    .nav__links {
+        display: none;
+        flex-direction: column;
+    }
+}
+
+/* Scroll Reveal Transiciones */
+[data-scrollreveal] {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+[data-scrollreveal].sr-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease-in-out;
+}
+
+/* Footer Tipo Escritor */
+.typer {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Imágenes */
+.img-ingenieria-social {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin: 1rem auto;
+    display: block;
+    border-radius: 12px; /* Bordes más suaves */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra difusa */
+}
+
+/* Estilo de links */
+a {
+    text-decoration: none;
+    color: inherit; /* Evitar subrayados innecesarios */
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0072c6; /* Efecto hover suave */
+}
+
+/* Estilo de los botones */
+button {
+    background-color: #00509e;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003e7c; /* Efecto hover */
+}
+.img-ingenieria-social {
+    width: 50%; /* Ajusta al 100% del contenedor */
+    max-width: 700px; /* Limita el tamaño máximo */
+    height: 20%; /* Mantiene la proporción */
+    margin: 1rem auto; /* Centra las imágenes */
+    display: block; /* Asegura que la imagen sea un elemento de bloque */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para mayor estética */
+  }
+  
+  /* El modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* La imagen dentro del modal */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%; /* Ajusta el ancho máximo de la imagen */
+    max-height: 80%; /* Ajusta la altura máxima de la imagen */
+    width: auto;     /* Deja que el ancho se ajuste automáticamente */
+    height: auto;    /* Deja que la altura se ajuste automáticamente */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7); /* Opcional: Añade sombra para mejorar la estética */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+}
+
+
+/* El texto para el caption */
+#caption {
+    text-align: center;
+    color: #ccc;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+/* Botón para cerrar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
